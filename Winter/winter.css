@@ -1,0 +1,185 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+@font-face{
+    font-family: Catcalling;
+    src: url(./RES/CatcallingDemoRegular.ttf);
+}
+.header{
+    font-family: Catcalling;
+    font-weight: 900;
+    margin: auto;
+    width: 100%; 
+    
+    background-color: #00192f;
+}
+.logo{
+    max-width: 300px;
+    
+}
+.titol{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    padding-left: 1em;
+    vertical-align: middle;
+    color: #a9ebff;
+    font-size: 4em;
+    text-shadow:2px 2px #a994be;
+    margin: .4em 0 .25em 0;
+}
+.menu .apartats li:hover{
+    background-color: #75b1ec;
+}
+
+/******* CONTINGUT DE LA PAGINA ********/
+
+@font-face{
+    font-family: comforta;
+    src: url(./RES/Comfortaa-Regular.ttf);
+}
+h2{
+    color:#6bc1f4;
+}
+
+.cont{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    width: 90%;
+    font-family: comforta;
+}
+.contingut1{
+    margin-bottom: 2em;
+    /* border-bottom: 1px solid #a994be; */
+}
+.text{
+    text-align: justify;
+    font-size: small;
+    
+}
+.menu{
+    width: 15%;
+    background-color: #4994df;
+    height: fit-content;
+    padding: 1em 1em;
+    margin-right: 1.5em;
+    border-radius: .5em;
+    margin-top: 1em;
+
+}
+.menu .apartats li a{
+    text-decoration: none;
+    
+}
+.apartats li{
+    list-style-type: none;
+}
+.middle{
+    width: 50%;
+    margin-right: 2em;
+}
+.imgsize{
+    width: 40%;
+}
+.dreta{
+    float: right;
+    margin-left: 1.5em;
+}
+.esquerra{
+    float: left;
+    margin-right: 1.5em;
+}
+.right{
+    width: 35%;
+    background-color: #4994df;
+    height: fit-content;
+    padding: 1em 1em;
+    border-radius: .5em;
+    margin-top: 1em;
+
+}
+
+.right ul li{
+    list-style-type: none;
+    margin-bottom: .5em;
+    margin-left:-20px;
+}
+.footer{
+    padding: 2em 0; 
+    display: block;
+    width: 100%;
+    background-color: #00192f;
+}
+.textcopy{
+    color:#a994be ;
+    font-family: comforta;
+    text-align: center;
+}
+
+/*******  RESPONSIVE MAX 800px  *******/
+
+@media only screen and (max-width:800px){
+    
+    .header{
+        width: 100%;
+    }
+    .logo{
+        max-width: 225px;
+    }
+    .cont{
+        width: 100%;
+        display:block;
+        
+        
+    }
+    .menu{
+        width: 100%;
+        padding: 1em 0;
+        margin-top: 0;
+        text-align: center;
+        border-radius: 0;
+        
+    }
+    .menu ul{
+        padding: 0;
+    }
+    .apartats{
+        display: flex;
+        justify-content: center;
+    }
+    .apartats li{
+        padding: 1em;
+    }
+    .middle{
+        width:600px;
+        margin: auto;
+    }
+    .contingut1{
+        display: block;
+    }
+    .contingut1 p{
+        width: 600px;
+    }
+    .contingut1 img{
+        width: 600px;
+        margin-bottom: 1em;
+    }
+    .contingut2 img{
+        width: 600px;
+        margin-bottom: 1em;
+    }
+    .right{
+        width: 100vw;
+        padding:1em 0;
+        border-radius: 0;
+    }
+    .espai{
+        margin: 1.5em;
+    }
+
+}

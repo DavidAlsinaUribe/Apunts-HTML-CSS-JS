@@ -1,0 +1,127 @@
+
+
+body{
+    max-width: 100%;
+}
+.cuadros{
+    display: inline-block;
+    background-color: rgb(255, 255, 226);
+    margin: 1em;
+    padding: 2em 2em;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+}
+.bordes{
+    border-top:1em solid rgba(133, 18, 75, 0.5);
+    margin-bottom: 1em;
+}
+.sombreados{
+    border-top:1em solid rgba(133, 18, 75, 0.5);
+    margin: 2em 0;
+}
+.otros{
+    border-top:1em solid rgba(133, 18, 75, 0.5);
+    margin: 2em 0;
+}
+/***************** Estilo para recuadros *******************/
+.redondeado{
+    border-radius: 1em;
+}
+.redondeado2{
+    border-radius: 1em 0 1em 0;
+    
+}
+.redondeado3{
+    border-radius:0 1em 0 2em ;
+    
+}
+.redondeado4{
+   border-radius: 5em 0;
+} 
+
+.sombra{
+   box-shadow: 5px 5px 5px black;
+}
+.sombra2{
+    box-shadow: -10px -10px 5px rgb(160, 85, 0);
+ }
+.sombra3{
+    box-shadow: -10px 10px 20px rgb(25, 21, 255);
+}
+.sombra4{
+    box-shadow: 20px -20px  rgb(25, 21, 255);
+}
+.marco{
+    padding: 1em 1em;
+    border:1em solid transparent;
+    border-image: url(./IMG/pexels-emiliano-arano-1295138.jpg) 40 repeat;
+}
+.marco2{
+    padding: 1em 1em;
+    border:1em solid transparent;
+    border-image: url(./IMG/cabecera.gif) 30 round;
+}
+.marco3{
+    padding: 1em 1em;
+    border:1em solid transparent;
+    border-image: url(./IMG/marco.png) repeat  ;
+    
+}
+.transparent{
+    background-color:rgba(248, 248, 203,.4) ;
+}
+.gradient{
+    background-image: linear-gradient(rgb(255, 126, 126),rgb(127, 221, 127), rgb(253, 253, 130));
+}
+
+/**************** Estilo para texto *******************/
+
+.titulo{
+    margin-top: 0;
+    font-size: 3em;
+    text-align: center;
+    background-image: url(./IMG/pexels-emiliano-arano-1295138.jpg);
+}
+.normal{
+    text-align: left;
+     
+}
+.centrat{
+    text-align: center;
+}
+.espaciado{
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+.primeraMayus::first-letter{
+    font-size: 2em;
+    
+}
+.textoizq{
+    
+    text-align: right;
+    margin-left: 1em;
+    
+}
+.bold{
+    font-weight: bold;
+}
+.allcaps{
+    text-transform: inherit;
+    font-variant: small-caps;
+}
+
+.rallas{
+    border-top:solid orange 1px;
+    border-bottom: solid orange 1px;
+    color: orange;
+    
+}
+.relleno{
+    background:rgb(152, 204, 69);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+

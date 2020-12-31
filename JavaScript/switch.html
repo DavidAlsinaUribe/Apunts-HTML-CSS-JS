@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./switch.html">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = new Date(); // això és un objecte
+        var data2 = Date(); // això és una cadena de caràcters
+        
+        var day = data.getDay(); // això agafa el dia de la setmana de l'objecte data (que es una instancia de Date())
+        
+        console.log(day);
+        console.log([data, data2]);
+        
+        switch (day) {
+            case 1:
+            console.log("Avui és diumenge")
+            break;
+            case 2:
+            console.log("Avui és dilluns")
+            break;
+            case 3:
+            console.log("Avui és dimarts")
+            break;
+            case 4:
+            console.log("Avui és dimecres")
+            break;
+            case 5:
+            console.log("Avui és dijous")
+            break;
+            case 6:
+            console.log("Avui és divendres")
+            break;
+            case 7:
+            console.log("Avui és dissabte")
+            break;
+            default:
+            
+            
+            
+        }
+        
+        var dia_set = numToDay(dia);
+        switch (day) {
+            case 1:
+            dia_set = "diumenge";
+            break;
+            case 2:
+            dia_set = "dilluns";
+            break;
+            case 3:
+            dia_set = "dimarts";
+            break;
+            case 4:
+            dia_set = "dimecres";
+            break;
+            case 5:
+            dia_set = "dijous";
+            break;
+            case 6:
+            dia_set = "divendres";
+            break;
+            case 7:
+            dia_set = "dissabte";
+            break;
+            default:
+            
+        }
+        console.log(`Avui és ${dia_set}`)
+        
+        
+        function numToDay(num) {
+            let day;
+            switch (num) {
+                case 0:
+                day = "diumenge";
+                break;
+                case 1:
+                day = "dilluns";
+                break;
+                case 2:
+                day = "dimarts";
+                break;
+                case 3:
+                day = "dimecres";
+                break;
+                case 4:
+                day = "dijous";
+                break;
+                case 5:
+                day = "divendres";
+                break;
+                case 6:
+                day = "dissabte";
+                break;
+                default:
+                
+            }
+            
+            return day;
+            
+        }
+        
+        
+        
+        
+        console.log('-----------------------------------------------');
+        var t_c = 21;
+        
+        console.log(t_c + " ºC són " + celToFahr(t_c) + " ºF")  // la funció celToFahr() passa de graus Celsius a Fahrenheit
+        
+        
+        
+        
+        
+        console.log('-----------------------------------------------');
+        var nom, dia, mascota;
+
+        nom= "David";
+        dia=15;
+        mascota = "gat";
+        
+        var sal = saludo(nom, dia, mascota); // la funció retorna el valor de la variable
+        console.log(sal); 
+
+
+        console.log('-----------------------------------------------');
+
+        var temp_c = 30;
+        var temp_f = 80;
+
+        console.log(temp_c + " ºC són " + convertTemp(temp_c,"C") + " ºF"); // Una funció amb un paràmetre "selector"
+        console.log(temp_f + " ºF són " + convertTemp(temp_f,"F") + " ºC");
+
+
+
+        function convertTemp(temp,graus){
+            var temperatura = temp;
+            var temperaturaT;
+
+            if (graus == "C"){
+                temperaturaT = temperatura* 9/5 + 32;
+            }
+            else if (graus == "F"){
+                temperaturaT = (temperatura - 32) * 5/9 ; 
+            } 
+            return temperaturaT.toFixed(1);
+        }
+        // function saludo(sal){
+        //     return `El ${nom} va adoptar un ${mascota} el dia ${dia} de desembre`;
+            
+        // }
+        function saludo(nom, dia, mascota){
+            return `El ${nom} va adoptar un ${mascota} el dia ${dia} de desembre`;
+            
+        }
+        
+        saludar(nom, dia, mascota);         // la funció executa el console.log()
+        
+        function saludar(sal){
+            console.log(`El ${nom} va recollir un ${mascota} del carrer el dia ${dia} de gener.`)
+        }
+
+        function celToFahr(cel){
+            let fahr = cel* 9/5 + 32;
+            
+            return  fahr;
+        }
+
+        // --------------------------------------------------------------------------------------------
+
+        var x, y, sym;          // x i y són números, sym és un símbol d'aquests (+, -, *, /, **, %)
+
+    
+        x= prompt("Introdueix el primer número");
+        sym= prompt("Introdueix el primer symbol");
+        y= prompt("Introdueix el segon número");
+        calculadora(x,y,sym);   // ha de dir "2 elevat a 3 és 8"
+
+        function calculadora(a,b,s){
+           if (s == "+") {
+               console.log(`${a} més ${b} és ${parseFloat(a)+parseFloat(b)}`);
+
+            } else if (s == "-"){
+               console.log(`${a} menys ${b} és ${a-b}`);
+
+            } else if (s == "*"){
+                console.log(`${a} multiplicat per ${b} és ${a*b}`);
+
+            } else if (s == "/" && b!= 0){
+                console.log(`${a} dividit per ${b} és ${a/b}`);
+
+            } else if (s == "/" && b== 0){
+                console.log(`${a} dividit per ${b} és ${a/b}`);
+
+            } else if (s == "**"){   
+                console.log(`${a} elevat a ${b} és ${a**b}`); 
+
+
+            } else if (s == "%"){
+                console.log(`La resta de dividir ${a} per ${b} és ${a%b}`);
+            
+            } else {
+                console.log(`%c"${s}" no és una operacio valida`, `color: red;`);
+            }
+            
+
+            
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

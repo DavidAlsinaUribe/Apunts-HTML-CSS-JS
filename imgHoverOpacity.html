@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: auto;
+            width: 1024px;
+            align-content: center;
+        }
+        img{
+            display: inline-block;
+            width: 500px;
+            height: 400px;
+        }
+        /* img:hover{
+            display: inline-block;
+            width: 500px;
+            height: 400px;
+            transition: .5s ease;
+            opacity: 50%;
+        } */
+        h1{
+            text-align: center;
+        }
+        .fons{
+            background-color: black;
+            display: inline-block;
+            width: 500px;
+            height: 400px;
+        }
+        .fons:hover img{
+            display: inline-block;
+            width: 500px;
+            height: 400px;
+            transition: .5s ease;
+            opacity: 50%;
+        }
+        .text{
+            position: absolute;
+            padding:2em 2em;
+            bottom: 150px;
+            left: 150px;
+            display: none;
+            color: white;
+            
+        }
+        .fons:hover .text{
+        
+            display: block;
+            
+        }
+        .rel{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Imatges Opacitat</h1>
+        <div>
+            <div class="fons">
+                <img   src="./IMG/MusicPiano.jpg" alt="">
+                <div class="rel">
+                    <p class="text">Aquí es toca el piano</p>
+                </div>
+            </div>
+
+            <div class="fons">
+                <img  src="./IMG/MusicViolin.jpg" alt="">
+                <div class="rel">
+                    <p class="text">Aquí es toca el violí</p>
+                </div>
+            </div>
+
+            <div class="fons">
+                <img  src="./IMG/MusicSaxo.jpg" alt="">
+                <div class="rel">
+                    <p class="text">Aquí es toca el saxòfon</p>
+                </div>
+            </div>
+
+            <div class="fons">
+                <img   src="./IMG/MusicGuitarra.jpg" alt="">
+                <div class="rel">
+                    <p class="text">Aquí es toca la guitarra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

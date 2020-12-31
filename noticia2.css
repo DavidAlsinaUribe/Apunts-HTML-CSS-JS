@@ -1,0 +1,77 @@
+body{
+    margin: auto;
+    width: 1024px;
+    height: auto;
+    align-content: center;
+    background-image: url(./img/Blue-Pattern-Background-For-Free-Download.jpg);
+}
+.botons{
+    width: 300px;
+    list-style-type: none;
+    display: inline-flex;
+    text-align: right;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: x-small;
+    margin-right: -120px;
+    
+}
+.text{
+    text-align: justify;
+    color: white;
+    border: 2px solid rgb(255, 202, 123);
+    padding: 1em;
+}
+.boxborder{
+    font-weight: bold;
+    color: rgb(255, 202, 123);
+    border: 1px solid rgb(255, 202, 123);
+    margin-right: 10px;
+    
+    padding: 3px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box{
+    background-color: rgb(255, 202, 123);
+}
+.titulo{
+    color: rgb(255, 202, 123);
+    margin-top: 0em;
+    margin-bottom: 0;
+    text-align: right;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    
+}
+.imgizq{
+    float: right;
+    width: 150px;
+    background-image: url(./img/mayor-wilbur-07.jpg);
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: none;
+}
+.smalltitle{
+    background-color: rgb(255, 202, 123);
+    text-align: left;
+    padding-left: 5px;
+    
+}
+.imgderecha{
+    float: right;
+    width: 400px;
+    transform: translate(0, 25px);
+    margin-left: 1em;
+    margin-bottom: .5em;
+    margin-top: 2em;
+    margin-right: 0;
+    color: none;
+}
+.textcut{
+    margin-right: 0;
+}

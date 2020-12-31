@@ -1,0 +1,178 @@
+body{
+    margin: auto;
+    margin-top: 0;
+    
+}
+.nav{
+    background-color: hsl(184, 72%, 39%, 70%);
+    padding: 1em 0;
+    position: fixed; 
+    width: 100%;
+    
+    
+}
+.barra{
+    list-style-type: none;
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 22.5em;
+    margin: 0;
+    
+}
+
+.text a{
+    
+    font-family: roboto;
+    font-size: x-small;
+    
+}
+.barra .text:hover a{
+    
+    background-color:hsl(184, 71%, 27%) ;
+    padding: 1em;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(./roboto/Roboto-Light.ttf);
+}
+
+
+.border{
+    border-right: white 1px solid;
+    padding-right: 1em;
+}
+
+h5{
+    color: #1ca4ad;
+    margin: 0;
+    text-align: center;
+    font-family: roboto;
+    font-size: xx-small;
+    position: relative;
+    bottom: 65px;
+}
+.text:hover{
+    opacity: 100%;
+}
+.header{
+    background-color: black;
+    padding: 5em 0 3em 0;
+    width: 100%;
+    
+    
+}
+.general{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color:#1ca4ad;
+    font-family: roboto;
+    font-size: 3em;
+    font-weight: lighter;
+    margin:0;
+    padding:1.5em 0;
+}
+h3{
+    color: #1ca4ad;
+    margin-top:0;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-family: roboto;
+    
+}
+.banner{
+    margin: 0;
+    width: 100%;
+    background-size: contain;
+    
+}
+.cont{
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    font-family: roboto;
+    margin: 50px auto;
+    text-align: justify;
+    align-content:center;
+}
+.about{
+    width:950px;
+    display: inline-block;
+    
+    border-right: 1px solid #1ca4ad;
+    padding-right: 2em;
+    text-align: justify;
+    margin-right: 10px;
+}
+.links{
+    display: inline-block;
+    width:300px;
+    margin-left: 1.5em;
+    padding: 1em;
+    background-color:#1ca3ad4d ;
+    border-radius: 1em;
+}
+.sub{
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+.last{
+    background-color: black;
+    padding: .5em 0; 
+    justify-content: center;
+    
+    
+    
+    
+    
+}
+.smalltext{
+    width: 400px;
+    display: block;
+    margin: 0 1em;
+    justify-content: space-between ;
+    
+    
+    
+}
+.linksredes{
+    width: 250px;
+}
+.sub2{
+    color: rgb(192, 192, 192);
+    font-family: roboto;
+    font-size: small;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    width: fit-content ;
+    text-align: center;
+}
+
+.footer{
+    
+    background-color: #1ca4ad ;
+    margin: 0;
+    padding:2em 0;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.white{
+    color: white;
+    font-family: roboto;
+    font-size: small;
+}
+.rsocial{
+    width: 25px;
+    height: 25px;
+    padding-right: 3.05em;
+    
+}

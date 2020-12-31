@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    
+    <link rel="stylesheet" media="screen" href="StyleM.css"> <!--CSS Mobile-->
+    <link rel="stylesheet" media="sceen and (min-width:800px)" href="styleD.css"> <!--CSS Desktop-->
+    
+    <style>
+        #media,#media2,#media3{
+            width: 200px;
+            height: 200px;
+            
+        }
+        
+        #media2{
+            background-color: green; /* mobile firs*/
+        }
+        #media3{
+            background-color: greenyellow;
+        }
+        @media only screen and (max-width: 800px){ /* Es carrega amb pantalles més petites de 800px */
+            #media2{
+                background-color: hotpink;
+            }
+        }
+        @media only screen and (min-width: 800px){ /* Es carrega amb pantalles més grans de 800px */
+            #media3{
+                background-color: rgb(182, 8, 95);
+            }
+        }
+        @media only screen and (min-width: 800px){ /* Es carrega amb pantalles més grans de 800px */
+            #media{
+                background-color: rgb(207, 0, 0);
+            }
+        }
+        .cuadro{                        /* Es carrega entre 800px i 1200px */
+            width: 300px;
+            height: 300px;
+            background-color: goldenrod;
+        }
+        
+        @media only screen and (max-width: 800px){ /* Es carrega fins a 800px */
+            .cuadro{
+                background-color: rgb(114, 82, 0);
+            }
+        }
+        @media only screen and (min-width: 1200px){ /* Es carrega a partir de 1200px */
+            .cuadro{
+                background-color: rgb(59, 50, 28);
+                color: white;
+            }
+        }
+        .cuadro2{                        /* Es carrega entre 800px i 1200px */
+            width: 300px;
+            height: 300px;
+            background-color: goldenrod;
+        }
+        
+        @media only screen and (max-width: 800px){ /* Es carrega fins a 800px */
+            .cuadro2{
+                background-color: rgb(114, 82, 0);
+            }
+        }
+        @media only screen and (min-width: 1000px){ /* Es carrega fins a 800px */
+            .cuadro2{
+                background-color: rgb(102, 255, 0);
+            }
+        }
+       
+        @media only screen and (min-width: 1200px){ /* Es carrega a partir de 1200px */
+            .cuadro2{
+                background-color: rgb(59, 50, 28);
+                color: white;
+            }
+        }
+        @media only screen and (min-width: 1500px){ /* Es carrega a partir de 1200px */
+            .cuadro2{
+                background-color: rgb(138, 133, 121);
+                color: white;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="media">
+        <p>Lorem ipsum dolor </p> <!--first child-->
+        <p>lorem Desktop ipsum</p> <!--last child-->
+    </div>
+    
+    <div id="media2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis atque labore quos numquam veritatis id illo accusantium quo voluptatibus corrupti pariatur laudantium rem, magni commodi vitae praesentium libero esse!</p>
+    </div>
+    
+    <div id="media3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis atque labore quos numquam veritatis id illo accusantium quo voluptatibus corrupti pariatur laudantium rem, magni commodi vitae praesentium libero esse!</p>
+    </div>
+    <div class="cuadro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptate, aliquid soluta nihil distinctio velit unde magnam delectus a eveniet modi in animi nesciunt maiores eligendi cum provident facere! Modi?</p>
+    </div>
+    <div class="cuadro2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptate, aliquid soluta nihil distinctio velit unde magnam delectus a eveniet modi in animi nesciunt maiores eligendi cum provident facere! Modi?</p>
+    </div>
+</body>
+</html>

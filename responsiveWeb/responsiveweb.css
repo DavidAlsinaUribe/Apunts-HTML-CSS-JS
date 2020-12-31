@@ -1,0 +1,167 @@
+@font-face{
+    font-family: roboto;
+    src: url(./roboto/Roboto-Light.ttf);
+}
+body{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: roboto;
+}
+
+.img{
+    align-items: center;
+    margin: 0;
+    
+    background-color: #f3be00;
+    padding: 0 2em;
+}
+.titol{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 150px;
+    height: 100px;
+}
+.menu{
+    background-color: #ffe541;
+    padding:0;
+    
+    
+}
+.apartats{
+    margin: 0;
+    justify-content: space-around;
+    margin-bottom:-20px;
+    padding:0;
+    opacity: 50%;
+    
+}
+
+.menu .apartats li:not(:last-child){
+    border-bottom: 1px solid black;
+    
+    
+}
+.menu .apartats li:hover{
+    background-color: #c3af32;
+   
+}
+h1{
+    color: brown;
+}
+.apartats li a{
+    font-size: x-large;
+    text-decoration: none;
+    padding: 0 1em;
+    
+    
+}
+.cos{
+  
+    background-image: url("./IMG/fons.jpg");
+    background-size: cover;
+    padding-bottom: 1em;
+    background-repeat: no-repeat;
+}
+h2{
+    padding-top: 1em;
+}
+
+.last{
+    margin: 0;
+}
+.footer{
+    background-color: #ffd393;
+    margin: 0;
+    padding: 2em 0;
+    
+}
+.text{
+    text-align: left;
+    margin:1em 1em;
+    
+}
+.imagenes{
+    width: 90%;
+   
+}
+.text::first-letter{
+    text-transform: capitalize;
+    font-size: xx-large;
+        
+   
+}
+
+@media only screen and (min-width:600px){
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    h1{
+        color: brown;
+    }
+    .cos{
+        width: 100%;
+        background-color: #ffffb9;
+        
+    }
+    .menu{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .apartats{
+        display: flex;
+        justify-content: center;
+    }
+    .apartats li:not(:last-child){
+        display: block;
+        border-right: 1px solid black;
+    }
+    .apartats li a{
+        display: flex;
+        padding: 1em;
+    }
+    .menu .apartats li{
+        border-bottom: none;
+    }
+    .apartats li:not(:last-child){
+        
+        border: 0 1px solid black;
+       justify-content: space-between;
+        
+    }
+    .menu .apartats li:not(:last-child){
+        border-bottom: none;
+        
+        
+    }
+    .galeria{
+        display: flex;
+        
+    }
+    .text{
+        text-align: justify;
+        margin:1em 1em;
+        
+    }
+    .text::first-letter{
+        text-transform: capitalize;
+        font-size: xx-large;
+            
+       
+    }
+    .imagenes{
+        width: 90%;
+        
+    }
+    
+}
+
+.menu ul li{
+    list-style-type: none;
+}

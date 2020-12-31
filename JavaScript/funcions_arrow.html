@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    function devolver(){
+        return 10;
+    }
+
+    const devolver2 = () => 10;
+    const devolver3 = _ => 10;
+
+    console.log({"funció antiga": devolver(), "funció arrow amn ()":devolver2(), "funció arrow amb _" : devolver3()})
+
+
+    function mult(a,b){
+        return a*b;
+    }
+
+    const mult2 = (a,b) => a*b;
+    const mult3 = (a,b) =>{
+        return a*b;
+    }
+
+    console.log({"funció antiga": devolver(), "funció arrow amn ()":devolver2(), "funció arrow amb _" : devolver3()});
+
+
+
+    cubo(3);            // eleva al cub
+    velocidad(300);     // transforma km/h en m/s
+    triangulo(5,18);    // area d'un triangle
+    circulo(4);         // calcula l'area i el perímetre d'un cercle (el valor de pi es pot obtenir amb Math.PI)
+
+    
+    // console.log( cubo(3));
+    // console.log( velocidad(300));
+    // console.log( triangulo(5,18));
+    // console.log( circulo(4));
+    
+
+    
+
+
+    const cubo1 = (a) => {
+        console.log(`${a} elevat al cub és ${a*a*a}`);
+    }
+
+    cubo1(3);
+
+
+    const cubo2 = (a) => {
+        return a*a*a;
+    }
+
+    function cubo(a){
+        resultat = a **3;
+        return resultat;
+    }
+
+    const velocidad1 = (b) =>{
+        console.log(`${b} Km/h són ${(b/3.6).toFixed(2)} m/s `)
+    }
+    velocidad1(300);
+
+    function velocidad(b){
+        let ms;
+        ms = b /3.6;
+    
+        return ms;
+    }
+
+    const triangulo1 = (c,d) => {
+        console.log(`L'area d'un triangle de ${c} cm d'ample i ${d} d'alt és de ${(c*d)/2} cm²`)
+    }
+    triangulo1(5,18);
+
+    function triangulo(c,d){
+        areaT = (c*d) / 2;
+
+        return areaT;
+    }
+
+
+    const circulo1 = (r) =>{
+        console.log(`L'area d'un cercle de radi ${r} cm és ${(Math.PI * (r**2)).toFixed(1)} cm². El perimetre d'aquest mateix cercle serà ${(2*Math.PI*r).toFixed(1)}cm`)
+    }
+    circulo1(4);
+    function circulo(r){
+        areaC = Math.PI * r**2;
+        perimetro = 2 * Math.PI * r;
+
+        return areaC, perimetro;
+    }
+
+    
+
+    </script>
+
+</body>
+</html>

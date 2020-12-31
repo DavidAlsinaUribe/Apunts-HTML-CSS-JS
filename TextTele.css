@@ -1,0 +1,30 @@
+
+
+p.text{
+    color: rgb(189, 189, 189);
+    font-size: xx-large;
+    text-align: center;
+    overflow: auto;
+    width: 1500px;
+    height: 200px;   
+    margin:5em;
+    align-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:0px 500px 700px 500px;
+
+    
+   
+    
+}
+.fons{
+    margin:auto;
+    width: 2667px;
+    height: 4000px;
+    background-image: url(./IMG/david-balev-iLwDW2lSOzk-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 700px;
+    
+    
+    
+}

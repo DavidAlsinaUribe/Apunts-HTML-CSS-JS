@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // calcular potències (sense usar ** ni Math.pow())
+
+        var a = 5;
+        var b = 9;
+
+        console.log(`${a} elevat a ${b} és ${potencia(a,b)}`);
+
+
+        // definiu aquí la funció
+
+        
+
+        function potencia(base,exp){
+            var cont = 0;       // cont es un contador que guarda les vegades que hem passat pel bucle.
+            var res = 1;        // resultat inicialitzat a 1 perquè qualsevol número elevat a 0 és 1.
+
+            while (cont<exp) {
+                res *= base;
+                cont++;
+            }
+            return res;
+           
+           
+        }
+
+        
+        // calcular potències (sense usar ** ni Math.pow())
+
+        var a = 3;
+        var b = 5;
+
+        console.log(`${a} elevat a ${b} és ${potencia(a,b)}`);
+
+        // definiu aquí la funció
+
+
+
+        // calcular factorial (N!)
+
+        var c = 7;
+
+        console.log(`${c} factorial (${c}!) és ${factorial(c)}`)
+
+        // definiu aquí la funció
+        function factorial(n) {
+            var cont = 0;       // contador
+            var res = 1;        // acumulador
+            var curr = n;       // número actual pel que estem multiplicant
+
+            while (cont < n) {
+                res *= curr;
+                curr--;
+                cont++;
+            }
+            return res;
+        }
+
+
+    </script>
+</body>
+</html>

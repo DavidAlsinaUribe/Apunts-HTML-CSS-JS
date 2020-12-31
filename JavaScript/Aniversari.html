@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var cumple = { "dia": 0,    //Objecte
+                       "mes": 0,
+                       "any": 0 }
+
+        m = 1 + parseInt(Math.random()*12);
+        y = 1900 + parseInt(Math.random()*121);
+        d = (Math.ceil(Math.random()*31));
+        // var d;
+
+        var mesos30 = [4, 6, 9, 11];
+        traspas = (y%400 == 0) || (y%4==0 && y%100 !=0);
+
+        if (m == 2){
+            if ( y%400 == 0) {
+                d = (Math.ceil(Math.random()*29))
+            } else {
+                d = (Math.ceil(Math.random()*28))
+            }
+           
+        }
+
+        else if (mesos30.includes(m)){
+            d = (Math.ceil(Math.random()*30))
+        }
+
+        console.log(`Va néixer el dia ${d} del mes número ${m} l'any ${y}`);
+
+
+
+        // var cumple = { "dia": 0,    //Objecte
+        //                "mes": 0,
+        //                "any": 0 }
+
+        // cumple.mes = 1 + parseInt(Math.random()*12);
+        // cumple.any = 1900 + parseInt(Math.random()*121);
+        // cumple.dia = (Math.ceil(Math.random()*31));
+        // // var d;
+
+        // var mesos30 = [4, 6, 9, 11];
+        // traspas = (cumple.any % 400 == 0)  (cumple.any%4==0 && cumple.any%100 !=0)
+
+        // if (cumple.mes == 2){
+        //     if ( cumple.any%400 == 0) {
+        //         cumple.dia = (Math.ceil(Math.random()*29))
+        //     } else {
+        //         cumple.dia = (Math.ceil(Math.random()*28))
+        //     }
+           
+        // }
+
+        // else if (mesos30.includes(cumple.mes)){
+        //     d = (Math.ceil(Math.random()*30))
+        // }
+
+        // console.log(`Va néixer el dia ${cumple.dia} del mes número ${cumple.mes} l'any ${cumple.any}`);
+
+    </script>
+</body>
+</html>

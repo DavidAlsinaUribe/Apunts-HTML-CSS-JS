@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Arxiu de proves de JavaScript ES6</h2>
+    <p>Prem F12 i fes clic a la pestanya <i>Console</i> per accedir a les respostes de la consola</p>
+    
+    <script>
+        world="how are you";
+        Hello="Hello world,";
+        xd="?";
+        console.log(Hello,world,xd);
+        
+        num1 = 3;
+        num2 = 4;
+        console.log(num1+num2);
+        console.log(num1.toString() + num2.toString());
+        
+        caixa1= "sabata";
+        caixa2= caixa1;
+        console.log(caixa2)
+        
+        
+        // Comentario de linea//
+        /* Comentarios en
+        lineas distintas
+        ;) */
+        
+        
+        a=3;
+        b=4;
+        c=a;
+        a=b;
+        b=c;
+        
+        temp= 20;
+        
+        temp= temp* 9/5 + 32 + "ºF";
+        
+        console.log("La temperatura és de " + temp );
+        console.log(`La temperatura és de ${temp}`);  // el simbol ${} fa que agafi el valor de la variable quan està dins de `` (no funciona amb cometes tipos "" ni '')
+        // console.log("La temperatura és de " + ((temp * 1.8)+32) + "ºF")
+        
+        console.log(a);
+        console.log(b);
+        
+        //---------------------------------------------------------------------------------------------------------        
+        
+        nom="David";
+        dia = "dijous";
+        mascota ="gat";
+        
+        console.log(`Hola, ${nom}. Com estàs en aquest maravellós ${dia}? Qué tal està el teu ${mascota}`);
+        
+        
+        //-------------------------------------------------------------------------------------------------------
+        
+        
+        document.write("Això escriu al cos del HTML");
+        // OUTPUTS: console.log(), innerHTML, document.write(), widnow.alert() y window.print()
+        
+        // window.alert('Hola!');  //Això crea una alerta al iniciar la página
+        
+        //-------------------------------------------------------------------------------------------------------
+        dies = 3;
+        segons= 24*3600*dies
+        // el teu codi aquí
+        console.log("Hi ha " + segons + " segons en " + dies + " dies");
+        
+        euros = 7;
+        dolares= 1.21 * euros
+        // el teu codi aquí
+        console.log(euros + " euros són " + dolares + " dòlars");
+        
+        precio = 100;
+        con_iva=  precio*1.21
+        // el teu codi aquí
+        console.log("El que costa " + precio + " euros sense IVA, costa " + con_iva + " amb IVA (del 21%)");
+        
+        //-------------------------------------------------------------------------------------------------------
+        
+        const alto = 4;
+        const ancho = 8;
+        per= 2*(alto+ancho)+"cm";
+        area= alto* ancho + "cm²";
+        // tu código aquí
+        console.log("un rectángulo de alto " + alto + " y ancho " + ancho + " tiene un perímetro de " + per + " y un área de " + area);
+        
+        const grados_f = 451
+        grados_c= (grados_f - 32) * 5/9;
+        // tu código aquí
+        console.log(grados_f + " grados Fahrenheit son " + grados_c.toFixed(1) + " grados Celsius") // toFixed() fija los decimales
+        
+        //----- Pedido de nom(caja) de material(sushi) de tamaño (gigante). comentari(Salmó a tope!)--------------------------------------------------------------------------------------------------
+        
+        var nom, material, size, comentari;  // Declara variables
+        
+        nom= "David";                       // Asigna valor variables
+        material="sushi"
+        size="gigante"
+        comentari="salmón a tope!"
+        
+        console.log(`${nom} ha pedido una caja de ${material} que es ${size}. ¡Lo mejor es que hay ${comentari} `);
+        
+        
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        const radi = 3;
+        const PI = 3.14159265;
+        area= PI * radi**2; // L'operador ** és per exponenciar
+        console.log("L'àrea d'un cercle de radi " + radi + " és " + area);
+        
+        const chuches = 17;
+        const alumnos = 5;
+        
+        console.log("Si somos " + alumnos + " alumons y repartimos " + chuches + " chuches, el Omar se come " + chuches%alumnos + "chuches");
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        var x = 5;
+        
+        x+= 3; // li suma un valor de tres al valor de la variabla de x inicial
+        
+        var b;
+        
+        b=true;
+        
+        b=(3<4);
+        console.log(b);
+        
+        var car=["azul","negro","verde"];
+        
+        console.log(car[1]);
+        console.log("-----------------------------")
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // condicional if
+        
+        var condicio = false;  // variable booleana amb valor true(1)
+        
+        var pegi = 1;
+        
+        if(!condicio){
+            console.log("la condició s'ha complert")
+        } else{
+            console.log("la condició no s'ha complert")
+        }
+        
+        var condicio = (3<4);  // variable booleana amb valor true(1)
+        
+        if(condicio){
+            console.log("la condició s'ha complert")
+        } else{
+            console.log("la condició no s'ha complert")
+        }
+        
+        
+        var pegi = 2 ;
+        
+        if(pegi < 7){
+            console.log("Pots jugar a jocs amb PEGI AP")
+        } else if(pegi < 13){
+            console.log("Pots jugar a jocs amb PEGI 7")
+        } else if (pegi <18){
+            console.log("Pots jugar a jocs amb PEGI 13")
+        } else {
+            console.log("Pots jugar a jocs amb PEGI 18")
+        }
+        
+        console.log("-----------------------------")
+        
+        var nota = 10;
+        
+        if(nota <= 4){
+            console.log("Suspès")
+        } else if(nota == 5){
+            console.log("suficient")
+        }else if(5 < nota & nota != 7){
+            console.log("bé")
+        }else if (7 < nota < 9){
+            console.log("Notable")
+        } else if (nota == 10) {
+            console.log("excelent")
+        }
+        
+        console.log("-----------------------------")
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        var num = 0; //integer
+        
+        if (num < 0) console.log("negatiu");
+        else if (num > 0) console.log("Positiu");
+        else console.log("El número no tiene signo definido")
+        if (num % 2 == 0) console.log("parell");
+        else console.log("impar");
+        if (num % 5 == 0) console.log("És multiple de 5");
+        else console.log("No és multiple de 5");
+        if (num % 10 == 0) console.log("És multiple de 10");
+        else console.log("No és multiple de 10");
+        if (num >= 100) console.log("És igual o major de 100");
+        else console.log("No és major de 100");
+        
+        
+        console.log("-----------------------------")
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        var nota = prompt("Quina és la teva nota?");
+        
+        if(nota <= 4){
+            console.log("Suspès")
+        }else if(nota == 5){
+            console.log("suficient")
+        }else if(5 < nota < 7 & nota != 7){
+            console.log("bé")
+        }else if (7 < nota < 9 & nota != 9){
+            console.log("Notable")
+        }else if (nota >= 9 ) {
+            console.log("excelent")
+        }
+        
+        console.log("-----------------------------")
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // Colors in console
+        
+        console.log("%cAixò és un missatge blau","color:blue")
+        console.log("%cAixò és un missatge gran","font-family:Arial;font-size:2em;font-style:italic")
+        console.log("%cAixò és un missatge fons", "background-color: red; color:yellow; padding:1em")
+        
+        console.log("%cD%cA%cV%cI%cD","color:red","color:blue","color:pink","color:orange","color:purple")
+        console.log("%c Probando","font-weight:bold; font-size:3em;border:1px solid black; padding:1em")
+        
+        
+        
+        console.log("-----------------------------")
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // Condicional switch
+        var color=42;
+
+        switch (color){
+            case "vermell":
+                console.log("És vermell");
+                break;
+            case "blau":
+                console.log("És blau");
+                break;
+            case 42:
+                console.log("The big answer")
+                break;
+            default:
+                console.log("Cap dels anteriors");
+
+        }
+        switch (key) {
+            case value:
+                
+                break;
+        
+            default:
+                break;
+        }
+
+        console.log("-----------------------------")
+
+
+        var data = new Date(); // aixòés un objecte
+        var data2 = Date(); // això és una cadena de caràcters
+
+        var day = data.getDay(); // això agafa el dia de la setmana de l'objecte data (que es una instancia de Date())
+        
+        console.log(day);
+        console.log([data, data2]);
+
+        
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // Bucle for
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // Bucle while
+        
+        //-------------------------------------------------------------------------------------------------------------------
+        
+        // Funcions "antigues", funcions "arrow"
+    </script>
+    <script src="./proves.js"></script>
+</body>
+</html>

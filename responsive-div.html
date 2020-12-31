@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .exemple div{
+            height: 100px;
+            background-color: rgb(8, 156, 107);
+            margin: 5px auto;
+        }
+        
+        .fixed{
+            width: 400px;
+        }
+        .max{
+            max-width: 800px;
+        }
+        .min{
+            min-width: 800px;
+        }
+        .res{
+            width: 800px;
+        }
+       
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .res{
+                width: 600px;
+            }
+        }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .res{
+                width: 600px;
+            }
+        }
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .res{
+                width: 768px;
+            }
+        }
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .res{
+                width: 992px;
+            }
+        }
+        
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .res{
+                width: 1200px;
+            }
+        }
+        
+
+        .cont div{
+            
+            height: fit-content;
+            background-color: rgb(8, 156, 107);
+            margin: 5px auto;
+            width: 250px;
+        }
+        .cont{
+            width: 700px;
+            display: flex;
+            
+            border: 1px solid black;
+        }
+
+
+        
+         /* Extra small devices (phones, 600px and down) */
+         @media only screen and (max-width:600px) {
+            .resp{
+                width: 300px;
+            }
+            .cont{
+                width: 280px;
+                flex-wrap: wrap;
+                flex-direction: column;     
+                height: fit-content;
+            }
+        }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            
+            .cont{
+                
+                flex-wrap:wrap;
+               
+            }
+            
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 1200px) {
+            .resp{
+               width: auto;
+            }
+            .cont{
+                width: 900px;
+                flex-wrap: no-wrap;
+                flex-direction: row;     
+                height: fit-content;
+            }
+            
+        }
+      
+        
+       
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="exemple">
+        <div class="fixed">
+            <p>fixed dimension</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="max">
+            <p>max-width</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium et aliquam autem tempore ratione nisi quibusdam quia deleniti sequi in, excepturi dicta incidunt quod eaque! Perspiciatis praesentium quibusdam voluptatum?
+            </p>
+        </div>
+        <div class="min">
+            <p>min-width</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium et aliquam autem tempore ratione nisi quibusdam quia deleniti sequi in, excepturi dicta incidunt quod eaque! Perspiciatis praesentium quibusdam voluptatum?
+            </p>
+        </div>
+        <div class="res">
+            <p>responsive</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium et aliquam autem tempore ratione nisi quibusdam quia deleniti sequi in, excepturi dicta incidunt quod eaque! Perspiciatis praesentium quibusdam voluptatum?
+            </p>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="resp">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente error, harum maiores omnis officia voluptas facere natus reprehenderit obcaecati?</p>
+        </div>
+        <div class="resp">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente error, harum maiores omnis officia voluptas facere natus reprehenderit obcaecati?</p>
+        </div>
+        <div class="resp">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente error, harum maiores omnis officia voluptas facere natus reprehenderit obcaecati?</p>
+        </div>
+        <div class="resp">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente error, harum maiores omnis officia voluptas facere natus reprehenderit obcaecati?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

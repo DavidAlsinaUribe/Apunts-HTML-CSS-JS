@@ -1,0 +1,120 @@
+body{
+    margin: auto;
+    width: 1280px;
+    height: 1024px;
+    align-content: center;
+  
+    
+}
+/* .img{
+    background-image: url(./IMG/kisspng-silhouette-wind-wave-graphic-design-waves-5ab955fe071e31.5189905415220956140292.png);
+    width: 150px;
+    height: 150px;
+    padding-top: 75px;
+    
+}
+.izq{
+    display:block;
+    width: 150px;
+    height: 100px;
+}
+.webs{
+    display: block;
+    font-size: x-large;
+    width: 100px;
+    text-align: right;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+.derecha{
+    display: block;
+    margin-left:250px; 
+}
+.line{
+    border-left:  3px solid black;
+    height: 500px;         
+    padding-left: 20px;
+}
+.Hline{
+    border-bottom: 3px solid black;
+    width: 250px;
+
+} */
+
+.text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+     font-size: small;
+     margin-bottom: 2em;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav,.cont{
+    display: inline-block;
+    vertical-align: top;
+   
+}
+.nav{
+    width: 140px;
+    border-right: rgb(217,0,0) solid 2px;
+    height: 100vh;
+    position: fixed;
+    margin-right: 2em;
+    padding-right: 1em;
+    
+}
+.cont{
+    margin-left: 150px;
+    padding: 20px 30px;
+    width: 800px;
+    
+    
+}
+ul.menu{
+    margin-right: 50px;
+    display: block;
+    list-style: none;
+    border-top: 2px solid rgb(217,0,0);
+    padding: 1.5em 0;
+    width: 157px;
+    color: rgb(217,0,0);
+}
+ul.menu li a{
+    display: block;
+    padding: .2em 0em;
+    text-decoration: none;
+}
+ul.menu li a:hover{
+    display: block;
+    padding: .5em 2em;
+    text-decoration: none;
+    color:rgb(255,140,0);
+    
+}
+h1{
+    margin-bottom: 1em;
+    color: rgb(4,117,111);
+}
+h1:hover{
+    margin-bottom: 1em;
+    color: rgb(233, 146, 7);
+
+}
+ .botons{
+    background-color: rgb(255,140,0);
+    margin: .9em;
+    text-align: center;
+    padding: -1em;
+    border-radius: 1em;
+    
+}
+.botons:hover{
+    background-color: rgb(4,117,111);
+    margin: .9em;
+    text-align: center;
+    padding: -1em;
+    
+}

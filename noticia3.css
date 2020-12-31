@@ -1,0 +1,91 @@
+body{
+    
+    margin: auto;
+    width: 1024px;
+    height: auto;
+    align-content: center;
+    background-color: rgb(0, 0, 107);
+}
+@font-face{
+    font-family:"Black Bones"; 
+    src: url(./tipos/Black\ Bones.ttf);
+}
+
+.botons{
+    color: white;
+    justify-content: space-around;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    font-size:2em;
+    padding-right:25px;
+    padding-left: 25px;
+    background-color: turquoise;opacity: 50%;
+   
+    
+}
+.text{
+    text-align: justify;
+    color: white;
+}
+h1{
+    transform: rotate(270deg) translate(-500px,-600px);
+    border-bottom: 10px dashed rgb(255, 202, 123);
+    padding-bottom: 30px;
+   
+   
+}
+    
+
+.box{
+    background-color: rgb(255, 202, 123);
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 202, 123);
+    margin-top: -3em;
+    margin-bottom: 0em;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.img1{
+    float: right;
+    width: 150px;
+    background-image: url(./img/mayor-wilbur-07.jpg);
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: none;
+    
+} 
+.smalltitle{
+    background-color: rgb(255, 202, 123);
+    text-align: left;
+    padding-left: 5px;
+    justify-content: center;
+    
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    letter-spacing: .1em;
+    
+}
+.imgderecha{
+    float: left;
+    width: 400px;
+    
+    margin-left: 1em;
+    margin-bottom: .5em;
+    margin-top: 2em;
+    margin-right: 0;
+    color: none;
+}
+.textcut{
+    margin-right: 0;
+}
+
